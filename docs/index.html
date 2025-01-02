@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -203,133 +203,68 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1735776000000" data-listing-file-modified-sort="1735792051213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/code.html" class="no-external"></a></p><a href="./posts/code.html" class="no-external">
-<p class="card-img-top"><img src="posts/code_files/figure-html/cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/code.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/code.html" class="no-external">code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/code.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/code.html" class="no-external">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt </span>
-<span id="cb1-3">x <span class="op">=</span> np.random.randn(<span class="dv">100</span>)</span>
-<span id="cb1-4">plt.plot(x)</span></code></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p></p>
-</figure>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/code.html" class="no-external">
-<div class="listing-date">
-Jan 2, 2025
-</div>
-<div class="listing-author">
-sangmin
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1735776000000" data-listing-file-modified-sort="1735792403994" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/프랑스.html" class="no-external"></a></p><a href="./posts/프랑스.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/프랑스.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/프랑스.html" class="no-external">프랑스혁명</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/프랑스.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/프랑스.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/프랑스.html" class="no-external">
-<div class="listing-date">
-Jan 2, 2025
-</div>
-<div class="listing-author">
-이상민
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1735776000000" data-listing-file-modified-sort="1735792086173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
-<div class="thumbnail">
-<p><a href="./posts/pororo.html" class="no-external"></a></p><a href="./posts/pororo.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/pororo.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/pororo.html" class="no-external">뽀로로</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/pororo.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/pororo.html" class="no-external">ref: https://home.ebs.co.kr/pororo/etc/1/cast</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/pororo.html" class="no-external">
-<div class="listing-date">
-Jan 2, 2025
-</div>
-<div class="listing-author">
-최다호
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1735776000000" data-listing-file-modified-sort="1735791452782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/test.html" class="no-external"></a></p><a href="./posts/test.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/test.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/test.html" class="no-external">test</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/test.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/test.html" class="no-external">asdf..</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/test.html" class="no-external">
-<div class="listing-date">
-Jan 2, 2025
-</div>
-<div class="listing-author">
-sangmin
-</div>
-</a>
-</div>
-</div>
-</div>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Author
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1735776000000" data-listing-file-modified-sort="1735792051213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="code" data-listing-filename-sort="code.ipynb">
+<td>
+<span class="listing-date">Jan 2, 2025</span>
+</td>
+<td>
+<a href="./posts/code.html" class="title listing-title">code</a>
+</td>
+<td>
+<span class="listing-author">sangmin </span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1735776000000" data-listing-file-modified-sort="1735792758178" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35" data-listing-title-sort="프랑스혁명" data-listing-filename-sort="프랑스.ipynb">
+<td>
+<span class="listing-date">Jan 2, 2025</span>
+</td>
+<td>
+<a href="./posts/프랑스.html" class="title listing-title">프랑스혁명</a>
+</td>
+<td>
+<span class="listing-author">이상민 </span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1735776000000" data-listing-file-modified-sort="1735792086173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97" data-listing-title-sort="뽀로로" data-listing-filename-sort="pororo.qmd">
+<td>
+<span class="listing-date">Jan 2, 2025</span>
+</td>
+<td>
+<a href="./posts/pororo.html" class="title listing-title">뽀로로</a>
+</td>
+<td>
+<span class="listing-author">최다호 </span>
+</td>
+</tr>
+<tr data-index="3" data-listing-date-sort="1735776000000" data-listing-file-modified-sort="1735791452782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="test" data-listing-filename-sort="test.qmd">
+<td>
+<span class="listing-date">Jan 2, 2025</span>
+</td>
+<td>
+<a href="./posts/test.html" class="title listing-title">test</a>
+</td>
+<td>
+<span class="listing-author">sangmin </span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
